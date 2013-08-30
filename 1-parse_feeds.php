@@ -29,7 +29,7 @@
 		$items	= $f->get_ordered_items($obj->date_last_item, $obj->filter_keywords);
 		if( count($items) > 0 ) {
 			$posts	= 0;
-			foreach($items as $item) {
+			foreach($items as $items) {
 				$message	= $item->source_title;
 				if( empty($message) && !empty($item->source_description) ) {
 					$message	= $item->source_description;
